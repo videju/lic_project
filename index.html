@@ -232,72 +232,60 @@
 				</div>
 			</div>
 		</main>  -->
-		<div id="add_a_List">
-		<div class="login_section">
-
-			<div class="wrapper">
-				<div class="title-text">
-				   <div class="title login">
-					<button>
-						
-					</button>
-					  Login Form
-				   </div>
-				   <div class="title signup">
-					  Signup Form
-				   </div>
-				</div>
-				<div class="form-container">
-				   <div class="slide-controls">
-					  <input type="radio" name="slide" id="login" checked>
-					  <input type="radio" name="slide" id="signup">
-					  <label for="login" class="slide login">add a new customer</label>
-					 
-					  <div class="slider-tab"></div>
-				   </div>
-				   <div class="form-inner">
-					  <form action="#" class="login">
-						 <div class="field">
-							<input id="full_name" type="text" placeholder="name of customer" required>
-						 </div>
-						 <div class="field">
-							<input id="policy_name" type="text" placeholder="policy name" required>
-						 </div>
-						 <div class="field">
-							<input id="policy_prize"  type="text" placeholder="policy prize" required>
-						 </div>
-						 <div class="field">
-							<input id="email"  type="text" placeholder="email" required>
-						 </div>
-						 <div class="field">
-							<input id="password"  type="password" placeholder="password" required>
-						 </div>
-						 <div class="pass-link">
-							<a href="#">Forgot password?</a>
-						 </div>
-						 <div class="field btn">
-							
-							<button  id="bton" onclick="register()">login  </button>
-					
-						 </div>
-						 <div class="signup-link">
-							Not a member? <a href="">Signup now</a>
-						 </div>
-					  </form>
-					
-				   </div>
-				</div>
-			 </div>
-			
-		</div>
-	</div>
-	 <div>
-		<button onclick = "googleSignin()">Google Signin</button>
-        <button onclick = "googleSignout()">Google Signout</button>
+		
+	
+	
+		
+		<!-- <button onclick = "googleSignin()">Google Signin</button>
+        <button onclick = "googleSignout()">Google Signout</button> -->
 	 </div>
 		<!-- MAIN -->
 	</section>
 	<!-- CONTENT -->
+	<div class="login_section">
+
+		<div class="wrapper">
+			<div class="title-text">
+			   <div class="title login">
+				  Login Form
+			   </div>
+			   <div class="title signup">
+				  Signup Form
+			   </div>
+			</div>
+			<div class="form-container">
+			   <div class="slide-controls">
+				  <input type="radio" name="slide" id="login" checked>
+				  <input type="radio" name="slide" id="signup">
+				  <label for="login" class="slide login">Login</label>
+				  <label for="signup" class="slide signup">Signup</label>
+				  <div class="slider-tab"></div>
+			   </div>
+			   <div class="form-inner">
+				  <form action="#" class="login">
+					<button onclick = "googleSignin()">Google Signin</button>
+					<button onclick = "googleSignout()">Google Signout</button>
+				  </form>
+				  <form action="#" class="signup">
+					 <div class="field">
+						<input type="text" placeholder="Email Address" required>
+					 </div>
+					 <div class="field">
+						<input type="password" placeholder="Password" required>
+					 </div>
+					 <div class="field">
+						<input type="password" placeholder="Confirm password" required>
+					 </div>
+					 <div class="field btn">
+						<div class="btn-layer"></div>
+						<input type="submit" value="Signup">
+					 </div>
+				  </form>
+			   </div>
+			</div>
+		 </div>
+		
+	</div>
 	
 	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
